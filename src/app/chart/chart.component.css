@@ -15,7 +15,7 @@ ul>li {
     position: absolute;
     top: calc((100vh - 130px)/2.45);
     width: 40%;
-    height: calc((100vh - 130px)/15);
+    height: calc((100vh - 130px)/20);
     left: 50%;
     transform: translateX(-50%);
 }
@@ -31,7 +31,7 @@ ul>li {
 }
 #usedChart,#allowChart {
     height: 100%;
-    width: calc((100vh - 130px)/20);
+    width: calc((100vh - 130px)/17);
     float: left;
 }
 .used-lable {
