@@ -1,0 +1,28 @@
+.content-wrap {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 60px;
+    background: #fafafa;
+}
+.content-title {
+    width: 100%;
+    line-height: 70px;
+    padding: 0 25px;
+    background: #fff;
+    color: #9b9b9b;
+}
+.content-title>strong {
+    color: #000;
+}
+
+app-chart {
+    position: absolute;
+    top: 95px;
+    left: 25px;
+    right: 10px;
+    bottom: 15px;
+    border-radius: 10px;
+    height: calc(100vh - 110px);
+}

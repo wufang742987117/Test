@@ -1,0 +1,78 @@
+ul {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+ul>li {
+    height: calc((100vh - 130px)/2);
+    background: #fff;
+}
+.li-mt {
+    margin-top: 20px;
+}
+.rate-wrap {
+    z-index: 9999999;
+    position: absolute;
+    top: calc((100vh - 130px)/2.45);
+    width: 40%;
+    height: calc((100vh - 130px)/20);
+    left: 50%;
+    transform: translateX(-50%);
+}
+.used,.allows {
+    float: left;
+    width: 50%;
+    height: 100%;
+    box-sizing: border-box;
+    padding-left: 20px;
+}
+.used {
+    border-right: 2px solid #000;
+}
+#usedChart,#allowChart {
+    height: 100%;
+    width: calc((100vh - 130px)/20);
+    float: left;
+}
+.used-lable {
+    float: left;
+    height: 100%;
+    padding-left: 15px;
+}
+.pt {
+    font-size: 20px;
+    line-height: 1;
+    margin: 0;
+    font-weight: bold;
+}
+.pb {
+    margin: 0;
+    color: #b6b6b6;;
+}
+
+.tool {
+    width: 120px; 
+   height: 80px; 
+   background: red;
+   position: relative;
+   -moz-border-radius:    10px; 
+   -webkit-border-radius: 10px; 
+   border-radius:         10px;
+}
+.tool:before {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid red;
+}
+
+.allow-wrap {
+    z-index: 9999999;
+    position: absolute;
+    bottom: 20px;
+    width: 40%;
+    height: calc((100vh - 130px)/20);
+    left: 50%;
+    transform: translateX(-50%);
+}

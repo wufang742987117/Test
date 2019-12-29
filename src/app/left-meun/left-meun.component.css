@@ -1,0 +1,20 @@
+.meun-wrap {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    padding: 75px 0;
+    width: 60px;
+    background: #363d63;
+}
+.meun-wrap>ul>li {
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.isActive {
+    background: #fafafa;
+    cursor: default!important;
+}

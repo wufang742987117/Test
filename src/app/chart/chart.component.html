@@ -1,0 +1,46 @@
+<ul>
+  <li echarts [options]='options' (chartClick)="onChartClick($event)"  (chartInit)="onChartInit($event)">
+      
+  </li>
+  <div class="rate-wrap">
+       <div class="used">
+         <div id="usedChart" echarts [options]='usedChart' (chartInit)="usedChartInit($event)">
+            
+         </div>
+         <div class="used-lable">
+           <p class="pt">{{rateData}}%</p>
+           <p class="pb">Cumulative use</p>
+         </div>
+       </div>
+       <div class="allows">
+        <div id="allowChart" echarts [options]='allowChart'>
+
+        </div>
+        <div class="used-lable">
+          <p class="pt">{{allowData}}%</p>
+          <p class="pb">Reagent allowance</p>
+        </div>
+       </div>
+  </div>
+  <li echarts [options]='options2' class="li-mt"></li>
+  <div class="allow-wrap">
+    <div class="used">
+      <div id="usedChart" echarts [options]='usedChart_2'>
+         
+      </div>
+      <div class="used-lable">
+        <p class="pt">67%</p>
+        <p class="pb">Cumulative use</p>
+      </div>
+    </div>
+    <div class="allows">
+     <div id="allowChart" echarts [options]='allowChart_2'>
+
+     </div>
+     <div class="used-lable">
+       <p class="pt">33%</p>
+       <p class="pb">Reagent allowance</p>
+     </div>
+    </div>
+  </div>
+</ul>
