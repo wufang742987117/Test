@@ -31,7 +31,7 @@ ul>li {
 }
 #usedChart,#allowChart {
     height: 100%;
-    width: calc((100vh - 130px)/17);
+    width: calc((100vh - 130px)/20);
     float: left;
 }
 .used-lable {
@@ -72,7 +72,10 @@ ul>li {
     position: absolute;
     bottom: 15px;
     width: 40%;
-    height: calc((100vh - 130px)/17);
+    height: calc((100vh - 130px)/20);
     left: 50%;
     transform: translateX(-50%);
+}
+@media only screen and (min-width: ) {
+	
 }
