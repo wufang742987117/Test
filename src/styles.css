@@ -12,8 +12,9 @@ a,
 img {
     -webkit-touch-callout: none
 }
-body {
+body,html {
     overflow: hidden;
+    min-width: 1200px;
 }
 a,
 a:active,
