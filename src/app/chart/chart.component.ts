@@ -31,7 +31,6 @@ export class ChartComponent implements OnInit {
     this.rateData = this.dataService.usedRade[event.dataIndex];
     this.allowData = 100-this.rateData;
     console.log(event)
-    // this.name = event.name;
     this.name = event.name;
     this.echartsIntance.setOption(this.options);
     this.usedChartIntance.setOption(this.usedChart)
