@@ -23,10 +23,10 @@ export class ChartComponent implements OnInit {
   onChartInit(event){
     this.echartsIntance = event;
   }
-  usedChartInit(event) {
+  usedChartInit(event) {					//饼图初始化
     this.usedChartIntance = event;
   }
-  onChartClick(event) {
+  onChartClick(event) {							//柱状图点击
     this.index = event.dataIndex;
     this.rateData = this.dataService.usedRade[event.dataIndex];
     this.allowData = 100-this.rateData;
@@ -50,7 +50,7 @@ export class ChartComponent implements OnInit {
     this.rateData = this.dataService.usedRade[this.index];
     this.allowData = 100-this.rateData;
     
-    this.usedChart = {
+    this.usedChart = {		//饼1
       tooltip: {
           show:false,
           trigger: 'item',
@@ -99,7 +99,7 @@ export class ChartComponent implements OnInit {
       ]
   };
 
-  this.allowChart = {
+  this.allowChart = {				//饼2
     tooltip: {
         show:false,
         trigger: 'item',
@@ -148,7 +148,7 @@ export class ChartComponent implements OnInit {
       ]
   }
 
-  this.usedChart_2 = {
+  this.usedChart_2 = {	//饼3
     tooltip: {
         show:false,
         trigger: 'item',
@@ -197,7 +197,7 @@ export class ChartComponent implements OnInit {
         ]
     };
 
-    this.allowChart_2 = {
+    this.allowChart_2 = {			//饼4
       tooltip: {
           show:false,
           trigger: 'item',
@@ -246,8 +246,7 @@ export class ChartComponent implements OnInit {
         ]
     }
   
-
-    this.options = {
+    this.options = {			//柱状图1
       title: {
         text: 'TOP 5 Most Consumed Reagents',
         x:'30px',
@@ -344,7 +343,7 @@ export class ChartComponent implements OnInit {
         }
     }]
     }
-    this.options2 = {
+    this.options2 = {					//柱状图2
       title: {
         text: 'Reagent statistics',
         x:'30px',
@@ -456,10 +455,8 @@ export class ChartComponent implements OnInit {
              color:'#ccc'
           },
           data:[200, 182, 191, 234, 290, 330, 310,182, 191, 234, 290, 330, 310,182, 191]
-      }
-  
+      	}
       ]
     }
-  }
-  
+  } 
 }
