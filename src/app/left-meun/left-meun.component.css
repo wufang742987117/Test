@@ -13,6 +13,9 @@
     text-align: center;
     cursor: pointer;
 }
+.meun-wrap>ul>li>img {
+	vertical-align: middle;
+}
 
 .isActive {
     background: #fafafa;
